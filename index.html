@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Guru</title>
+</head>
+<link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Noto+Serif+SC&family=Ubuntu:ital,wght@1,700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<style>
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        background: url('bg.jpg');
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 20px;
+        left: 34px;
+    }
+
+    .left h1 {
+        font-size: 20px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 37%;
+        margin: 20px auto;
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 34px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px 20px;
+    }
+
+    .navbar li a:hover , .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn {
+        margin: 0px 10px;
+        padding: 4px 14px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        border: 2px solid white;
+        border-radius: 28px;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .form-group input {
+        display: block;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 8px;
+        margin: 11px auto;
+        padding: 9px;
+        width: 88%;
+        font-size: 25px;
+    }
+
+    .container button{
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- this is for logo -->
+        <div class="left">
+            <h1>MEDITATION GURU</h1>
+        </div>
+        <!-- this is for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="">Meditation Tips</a></li>
+                <li><a href="#">Med Counter</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <!-- this is for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Start Meditation From Today</h1>
+        <form action="Noaction.php">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter Your Name Here">
+            </div>
+        </form>
+        <form action="Noaction.php">
+            <div class="form-group">
+                <input type="text" name="Email" placeholder="Enter Your Email Here">
+            </div>
+        </form>
+        <form action="Noaction.php">
+            <div class="form-group">
+                <input type="text" name="password" placeholder="Enter Your Password Here">
+            </div>
+        </form>
+        <form action="Noaction.php">
+            <div class="form-group">
+                <input type="text" name="Confirm password" placeholder="Confirm Password">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+    </div>
+</body>
+
+</html>
